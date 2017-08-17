@@ -5,8 +5,11 @@ date:   2017-08-17 12:00:00 +0100
 categories: Release
 ---
 
+Today I am releasing C# UK Post code Geo search API Wikiled.PostCode V 1.0
 
-Today I am releasing C# UK Post code Goe search API Wikiled.PostCode V 1.0
+Project [Website](https://github.com/AndMu/Wikiled.PostCode)
+
+Available on Nuget.
 
 Using this library, you can search similar post codes and retrieve related geo information.
 
