@@ -1,21 +1,54 @@
 ---
 layout: post
-title:  "UK Post data search API"
+title:  "UK Post data search C# API"
 date:   2017-08-17 12:00:00 +0100
 categories: Release
 ---
 
-Today I am releasing C# UK Post code Geo search API Wikiled.PostCode V 1.0
+Today I am releasing C# UK Post code (Geo search API Wikiled.PostCode V1.0)(https://github.com/AndMu/Wikiled.PostCode)
 
-Project [Website](https://github.com/AndMu/Wikiled.PostCode)
+![Nuget](https://img.shields.io/nuget/v/Wikiled.PostCode.svg)
 
-Available on Nuget.
+.NET Standard 1.1
 
-Using this library, you can search similar post codes and retrieve related geo information.
+Using this library, you can search similar post codes and retrieve related GEO information including coordinates.
 
-Sample Code: 
+It uses our REST server - free to use.
+
+
+To find post codes which start with N10:
 ```C#
 var instance = new PostCodeManagerFactory().Construct();
-var result = await instance.FindPostalData("N10GL", CancellationToken.None);
+var result = await instance.FindPostalData("N10", CancellationToken.None);
 			
 ```
+
+```C#
+ public class PostData
+    {
+        public string CountryGlobalCode { get; set; }
+
+        public string PostalCode { get; set; }
+
+        public string Ward { get; set; }
+
+        public string Country { get; set; }
+
+        public string CountryCode { get; set; }
+
+        public string LocalAuthorityCode { get; set; }
+
+        public string LocalAuthority { get; set; }
+
+        public string Borough { get; set; }
+
+        public string BoroughCode { get; set; }
+
+        public double Latitude { get; set; }
+
+        public double Longitude { get; set; }
+
+        public int Type { get; set; }
+    }
+```
+
