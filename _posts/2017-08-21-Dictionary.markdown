@@ -8,8 +8,11 @@ categories: Release
 Today I am releasing C# 37 Languages Online Free [Dictionary API V1.0](https://github.com/AndMu/Wikiled.Dictionary)
 
 ![Nuget](https://img.shields.io/nuget/v/Wikiled.Dictionary.svg)
+![GitHub](https://github.com/AndMu/wikiled.dictionary)
 
 .NET Standard 1.1
+
+Also accessbile as REST service. Sample query: http://api.wikiled.com/Dictionary/english/lithuanian/love
 
 Supports translation from/to English and any of below languages:
 
@@ -63,3 +66,4 @@ Samle code:
 	};
 	var result = await manager.Translate(request, CancellationToken.None);		
 ```
+
